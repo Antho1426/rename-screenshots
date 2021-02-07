@@ -20,7 +20,7 @@ list_PNG_MOV_Desktop = list_PNG_Desktop + list_MOV_Desktop
 # containing the string "Screenshot"
 list_Screenshots_Desktop = []
 for i in range(len(list_PNG_MOV_Desktop)):
-    if "Screenshot" in list_PNG_MOV_Desktop[i]:
+    if "Screenshot " in list_PNG_MOV_Desktop[i]:
         list_Screenshots_Desktop.append(list_PNG_MOV_Desktop[i])
 
 # 3) Renaming all the ".png" files situated on the Desktop and containing the
