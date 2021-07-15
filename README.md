@@ -14,7 +14,7 @@ the Desktop.
 
 ## 1. Description
 `rename_screenshots.py` is a simple Python program that automatically renames
-the ".png" and ".mov" screenshot files situated on the Desktop. By default, the
+the ".jpg", ".png" and ".mov" screenshot files situated on the Desktop. By default, the
 program simply removes the "Screenshot " text at the beginning of the name of
 each screenshot, but the program can be customized to rename the screenshots as
 needed. The Alfred workflow "Rename Screenshots" can also be used as a shortcut
