@@ -11,20 +11,21 @@ import pickle as cPickle
 
 ## Procedure
 
-# 1) Getting all the ".png" and ".mov" files situated on the Desktop
+# 1) Getting all the ".jpg", ".png" and ".mov" files situated on the Desktop
+list_JPG_Desktop = glob.glob("/Users/anthony/Desktop/*.jpg")
 list_PNG_Desktop = glob.glob("/Users/anthony/Desktop/*.png")
 list_MOV_Desktop = glob.glob("/Users/anthony/Desktop/*.mov")
-list_PNG_MOV_Desktop = list_PNG_Desktop + list_MOV_Desktop
+list_Desktop = list_JPG_Desktop + list_PNG_Desktop + list_MOV_Desktop
 
-# 2) Getting all the ".png" and ".mov" files situated on the Desktop and
+# 2) Getting all the ".jpg", ".png" and ".mov" files situated on the Desktop and
 # containing the string "Screenshot"
 list_Screenshots_Desktop = []
-for i in range(len(list_PNG_MOV_Desktop)):
-    if "Screenshot " in list_PNG_MOV_Desktop[i]:
-        list_Screenshots_Desktop.append(list_PNG_MOV_Desktop[i])
+for i in range(len(list_Desktop)):
+    if "Screenshot " in list_Desktop[i]:
+        list_Screenshots_Desktop.append(list_Desktop[i])
 
-# 3) Renaming all the ".png" files situated on the Desktop and containing the
-# # string "Screenshot"
+# 3) Renaming all the target files situated on the Desktop and containing the
+# string "Screenshot"
 for i in range(len(list_Screenshots_Desktop)):
     path = list_Screenshots_Desktop[i]
 
