@@ -21,7 +21,9 @@ needed. The Alfred workflow "Rename Screenshots" can also be used as a shortcut
 to quickly execute the program from anywhere by typing the `ren` hotkey in the
 Alfred search bar. Tested with the [Alfred v3.4 macOS app](https://www.alfredapp.com).
 
-<img src="rename-screenshots.gif" alt="rename-screenshots-gif" style="width: 640px;"/>
+<p align="center">
+	<img src="rename-screenshots.gif" alt="rename-screenshots-gif" style="width: 640px;"/>
+</p>
 
 ## 2. Getting started
 
