@@ -11,11 +11,12 @@ import pickle as cPickle
 
 ## Procedure
 
-# 1) Getting all the ".jpg", ".png" and ".mov" files situated on the Desktop
+# 1) Getting all the ".jpg", ".png", ".gif" and ".mov" files situated on the Desktop
 list_JPG_Desktop = glob.glob("/Users/anthony/Desktop/*.jpg")
 list_PNG_Desktop = glob.glob("/Users/anthony/Desktop/*.png")
+list_GIF_Desktop = glob.glob("/Users/anthony/Desktop/*.gif")
 list_MOV_Desktop = glob.glob("/Users/anthony/Desktop/*.mov")
-list_Desktop = list_JPG_Desktop + list_PNG_Desktop + list_MOV_Desktop
+list_Desktop = list_JPG_Desktop + list_PNG_Desktop + list_GIF_Desktop + list_MOV_Desktop
 
 # 2) Getting all the ".jpg", ".png" and ".mov" files situated on the Desktop and
 # containing the string "Screenshot"
