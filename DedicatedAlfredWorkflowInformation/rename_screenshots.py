@@ -24,17 +24,22 @@ def main(wf):
     ## Procedure
     #-------------------------------
 
-    # 1) Getting all the ".png" and ".mov" files situated on the Desktop
+    #++++++++++++++++++++++++++++++
+    word_to_replace = "Screenshot "
+    #++++++++++++++++++++++++++++++
+
+    # 1) Getting all the ".jpg", ".png", ".gif" and ".mov" files situated on the Desktop
     list_JPG_Desktop = glob.glob("/Users/anthony/Desktop/*.jpg")
     list_PNG_Desktop = glob.glob("/Users/anthony/Desktop/*.png")
+    list_GIF_Desktop = glob.glob("/Users/anthony/Desktop/*.gif")
     list_MOV_Desktop = glob.glob("/Users/anthony/Desktop/*.mov")
-    list_Desktop = list_JPG_Desktop + list_PNG_Desktop + list_MOV_Desktop
+    list_Desktop = list_JPG_Desktop + list_PNG_Desktop + list_GIF_Desktop + list_MOV_Desktop
 
     # 2) Getting all the ".png" and ".mov" files situated on the Desktop and
-    # containing the string "Screenshot"
+    # containing the string stored in the variable "word_to_replace"
     list_Screenshots_Desktop = []
     for i in range(len(list_Desktop)):
-        if "Screenshot " in list_Desktop[i]:
+        if word_to_replace in list_Desktop[i]:
             list_Screenshots_Desktop.append(list_Desktop[i])
 
     # 3) Renaming all the target files situated on the Desktop and containing the
@@ -48,7 +53,7 @@ def main(wf):
         # "Screenshot" by something else or to modify the name of the screenshots
         # differently, but I just want the word "Screenshot " to disappear and to
         # keep the date)
-        new_path = path.replace('Screenshot ', '')
+        new_path = path.replace(word_to_replace, '')
         # ===================================================
 
         os.rename(path, new_path)

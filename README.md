@@ -3,12 +3,14 @@ Simple Python program used to automatically rename the Screenshots situated on
 the Desktop.
 
 ## Table of contents
-* [1. Description](#1-description)
-* [2. Getting started](#2-getting-started)
-    * [2.1 Dependencies](#21-dependencies)
-    * [2.2 Installing](#22-installing)
-    * [2.3 Executing program](#23-executing-program)
-* [3. Version history](#3-version-history)
+- [rename_screenshots.py](#rename_screenshotspy)
+  - [Table of contents](#table-of-contents)
+  - [1. Description](#1-description)
+  - [2. Getting started](#2-getting-started)
+    - [2.1 Dependencies](#21-dependencies)
+    - [2.2 Installing](#22-installing)
+    - [2.3 Executing program](#23-executing-program)
+  - [3. Version history](#3-version-history)
 
 <!-- toc -->
 
@@ -39,7 +41,8 @@ No specific packages need to be installed, the program uses only the `os` and
 ### 2.3 Executing program
 Type following command at the root of the project:
 
-`python rename_screenshots.py`
+~~`python rename_screenshots.py`~~
+/usr/local/bin/python2.7 rename_screenshots.py
 
 ## 3. Version history
 * 0.1
