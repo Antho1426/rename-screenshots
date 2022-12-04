@@ -16,13 +16,7 @@ the Desktop.
 
 ## 1. Description
 
-`rename_screenshots.py` is a simple Python program that automatically renames
-the ".jpg", ".png" and ".mov" screenshot files situated on the Desktop. By default, the
-program simply removes the "Screenshot " text at the beginning of the name of
-each screenshot, but the program can be customized to rename the screenshots as
-needed. The Alfred workflow "Rename Screenshots" can also be used as a shortcut
-to quickly execute the program from anywhere by typing the `ren` hotkey in the
-Alfred search bar. Tested with the [Alfred v3.4 macOS app](https://www.alfredapp.com).
+`rename_screenshots.py` is a simple Python program that automatically renames the ".jpg", ".png" and ".mov" screenshot files situated on the Desktop. By default, the program simply removes the "Screenshot " text at the beginning of the name of each screenshot, but the program can be customized to rename the screenshots as needed. The Alfred workflow "Rename Screenshots" can also be used as a shortcut to quickly execute the program from anywhere by typing the `ren` hotkey in the Alfred search bar. Tested with the [Alfred v3.4 macOS app](https://www.alfredapp.com).
 
 <p align="center">
 	<img src="rename-screenshots.gif" alt="rename-screenshots-gif" style="width: 640px;"/>
@@ -37,8 +31,7 @@ Alfred search bar. Tested with the [Alfred v3.4 macOS app](https://www.alfredapp
 
 ### 2.2 Installing
 
-No specific packages need to be installed, the program uses only the `os` and
-`glob` packages.
+No specific packages need to be installed, the program uses only the `os` and `glob` packages.
 
 ### 2.3 Executing program
 
